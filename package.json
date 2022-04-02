@@ -1,10 +1,12 @@
 {
-  "name": "site11ty",
+  "name": "@partheus/food",
   "version": "1.0.0",
-  "description": "",
+  "description": "A place for Parth's favorite eats",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "eleventy --serve",
+    "build": "eleventy"
   },
   "keywords": [],
   "author": "",
