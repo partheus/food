@@ -3,4 +3,11 @@ module.exports = function(eleventyConfig) {
     return {
       passthroughFileCopy: true
     }
+
+    config.addCollection( 'places', collection =>
+	{
+		return collection
+			.getFilteredByGlob( '/places/*.md' )
+			.filter( place => !place.data.hidden );
+	});
   }
