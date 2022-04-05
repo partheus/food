@@ -6,3 +6,8 @@ Parth's favorite foods!
 
 
 This site is being built
+
+			{%- for place in collections.places -%}
+	<h2><a href="{{ place.data.url }}">{{ place.data.title }}</a></h2>
+	{{ place.templateContent | safe }}
+			{%- endfor -%}
