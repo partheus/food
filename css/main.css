@@ -1,7 +1,7 @@
 :root {
-	--color-dark: crimson;
+	--color-dark: rgb(24, 12, 14);
 	--color-mid: #CDC9C3;
-	--color-light: wheat;
+	--color-light: rgb(251, 245, 233);
 	--max-width: 500px;
 }
 
