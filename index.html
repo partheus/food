@@ -9,8 +9,7 @@ Parth's favorite foods!
 
 {%- for place in collections.places -%}
 	<h2>
-		<a href="{{ place.url }}">{{ place.data.title }}</a>
+		<a href="{{ place.data.url }}">{{ place.data.title }}</a>
 	</h2>
+	<p>{{ place.templateContent | safe }}</p>
 {%- endfor -%}
-
-Okay.

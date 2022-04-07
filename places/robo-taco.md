@@ -1,6 +1,6 @@
 ---
 title: Robo Taco
-url: https://robotaco.com/
+url: https://www.robotacopdx.com/
 neighborhoods:
   - NW
   - SW
@@ -8,4 +8,4 @@ emoji:
   character: 
   label: mexican
 ---
-You can’t go wrong with this Indian street food. The _kati roll_ and _pork vindaloo_ are out of this world. For extra credit grab a _G&T_, Emily’s favorite in town.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
