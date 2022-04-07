@@ -1,14 +1,12 @@
 :root {
-	--color-dark: #555555;
+	--color-dark: crimson;
 	--color-mid: #CDC9C3;
-	--color-light: #D9E4DD;
+	--color-light: wheat;
 	--max-width: 500px;
 }
 
 body {
     background: var(--color-dark);
-  min-height: 100vh;
-  max-height: 100%;
 	padding: 0.5em; 
 	color: var( --color-light );
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, serif;
@@ -19,7 +17,7 @@ body {
 
 @media screen and (min-width: 600px) {
 	body {
-		padding: 2.0em;
+		padding: 5.0em;
 	}
 }
 
