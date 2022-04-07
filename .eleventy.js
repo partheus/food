@@ -1,13 +1,12 @@
-module.exports = function(eleventyConfig) {
-    eleventyConfig.addPassthroughCopy('css')
-    return {
-      passthroughFileCopy: true
-    }
+module.exports = function (eleventyConfig) {
+  eleventyConfig.addCollection("places", function (collection) {
+    return collection.getFilteredByGlob("places/*.md");
+  });
 
-    config.addCollection( 'places', collection =>
-	{
-		return collection
-			.getFilteredByGlob( '/places/*.md' )
-			.filter( place => !place.data.hidden );
-	});
-  }
+  eleventyConfig.addPassthroughCopy("./css");
+  return {
+    passthroughFileCopy: true,
+  };
+
+
+}

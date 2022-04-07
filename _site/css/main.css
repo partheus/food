@@ -6,9 +6,11 @@
 }
 
 body {
-  background-color: var(--color-light);
-	padding: 0.5em;
-	color: var( --color-dark );
+    background: linear-gradient(to bottom right, #FF512F, #DD2476);
+  min-height: 100vh;
+  max-height: 100%;
+	padding: 0.5em; 
+	color: var( --color-light );
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, serif;
 	font-size: 16px;
 	font-style: normal;

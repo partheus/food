@@ -5,9 +5,12 @@ pageTitle: Food
 Parth's favorite foods!
 
 
-This site is being built
+<h4 class="h1">This site is being built</h4>
 
-			{%- for place in collections.places -%}
-	<h2><a href="{{ place.data.url }}">{{ place.data.title }}</a></h2>
-	{{ place.templateContent | safe }}
-			{%- endfor -%}
+{%- for place in collections.places -%}
+	<h2>
+		<a href="{{ place.url }}">{{ place.data.title }}</a>
+	</h2>
+{%- endfor -%}
+
+Okay.
