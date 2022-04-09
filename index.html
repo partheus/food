@@ -5,11 +5,16 @@ pageTitle: Food
 Parth's favorite foods!
 
 
-<h4 class="h1">This site is being built</h4>
+<h4 class="h1 food-item__header">This site is being built</h4>
 
 {%- for place in collections.places -%}
-	<h2>
+<div class="food-item"><span class="circle"></span>
+	<h2 class="food-item__header">
 		<a href="{{ place.data.url }}">{{ place.data.title }}</a>
 	</h2>
 	<p>{{ place.templateContent | safe }}</p>
+	<p class="food-emoji">🍞</p>
+</div>
+
 {%- endfor -%}
+
