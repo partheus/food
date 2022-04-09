@@ -16,17 +16,15 @@ body {
 	font-style: normal;
 	text-align: center;
 	font-family: var(--font-primary);
+
+	@media screen and (min-width: 600px) {
+		padding: 5.0em;
+	}
 }
 
 a {
 	color: aquamarine;
 	text-decoration:none;
-}
-
-@media screen and (min-width: 600px) {
-	body {
-		padding: 5.0em;
-	}
 }
 
 h1, h2, p {
@@ -45,9 +43,21 @@ p {
 	margin: 0 auto;
 }
 
+.content::after {
+	content: " ";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	transform: translateZ(-1px) scale(1.5);
+	background-size: 100%;
+	z-index: -1;
+}
+
 .food-item {
 	margin: 12em auto;
-	font-size: 1.25em;
+	font-size: 1em;
 	line-height: 1.25;
 	font-family: 'Bitter', serif;
 	display: flex;
@@ -61,7 +71,7 @@ p {
 	padding: 0.1em 0.25em;
 	font-family: var(--font-secondary);
 	font-weight: 900;
-	font-size: 4em;
+	font-size: 2.5em;
 	margin-bottom: 10px;
 	line-height: 1.75;
 	transition: all ease-in-out 0.3s;	
