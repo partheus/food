@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;600;700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/animations.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/accessibility.css" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8" />
     <title>{{ pageTitle }}</title>
@@ -17,12 +17,13 @@
         <li><a href="/about" class="link">About</a></li>
       </ul>
     </nav> -->
-    <h1 class="pagetitle">{{ pageTitle }}</h1>
+    <h1 class="pagetitle food-item__header"><a href="/">{{ pageTitle }}</a></h1>
     <div class="content">
     {{ content }}
   </div>
 <footer>
    <a href="https://parth.ninja" class="link"> © Parth Shiralkar, 2022</a>
+   <p  class="food-item__header"><a href="https://github.com/partheus/food/" target="_blank">< view sauce /></a></p>
 </footer>  
 </body>
 </html>
