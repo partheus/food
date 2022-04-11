@@ -3,14 +3,31 @@ layout: layout.liquid
 pageTitle: Food
 description: Parth's favorite eats in the PDX metropolitan area
 ---
+<button onclick="myFunction()" id="toggle" class="toggle">🌞</button>
+
 <h4 class="h1 food-item__header">< this site is being built /></h4>
 
 {%- for place in collections.places -%}
-<div class="food-item"><span class="circle"></span>
-	<h2 class="food-item__header">
-		<a href="{{ place.data.url }}">{{ place.data.title }}</a>
-	</h2>
-	<p class="food-item__about">{{ place.templateContent | safe }}</p>
-	<p class="food-emoji">{{ place.data.icon }}</p>
+<div class="food-item">
+  <span class="circle"></span>
+  <h2 class="food-item__header">
+    <a href="{{ place.data.url }}">{{ place.data.title }}</a>
+  </h2>
+  <p class="food-item__about">{{ place.templateContent | safe }}</p>
+  <p class="food-emoji">{{ place.data.icon }}</p>
 </div>
 {%- endfor -%}
+
+
+<script>
+  let isLight = true;
+  const toggle = document.querySelector("#toggle");
+
+  function myFunction() {
+    isLight = !isLight;
+    isLight ? (toggle.innerText = "🌞") : (toggle.innerText = "🌚");
+    var element = document.body;
+    element.classList.toggle("light--mode");
+    console.log(hehe);
+  }
+</script>

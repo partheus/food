@@ -184,6 +184,6 @@
 
 
       .pagetitle a:hover {
-        color: burlywood;
+        color: var(--color-mid);
         border-bottom: 10px solid palevioletred;
       }
