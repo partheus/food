@@ -35,12 +35,14 @@ html {
 }
 
 .pagedescription {
-	font-size: 2em;
-	text-transform: uppercase;
+	font-size: 2.5em;
+	text-transform: capitalize;
 	font-family: var(--font-text);
 	font-weight: bold;
-	letter-spacing: 0.1em;
+	letter-spacing: 0.01em;
 	color: var(--color-mid);
+	width: fit-content;
+	margin: 1em auto;
 }
 
 body {
@@ -199,6 +201,10 @@ p {
   */
   
   @media (min-width: 1025px) {
+
+	.food-item__about {
+		font-size: 1.5em;
+	}
 	.food-item__header {
 		font-size: 2.5em;
 	}
@@ -223,6 +229,22 @@ p {
 	}
 	
 }
+
+.footer-link {
+	font-size: 1.25em;
+	color: var(--color-mid);
+	font-family: var(--font-text);
+	cursor: alias;
+}
+
+.footer-links {
+	justify-content: center;
+	column-gap: 1em;
+    align-items: center;
+	display: flex;
+	flex-direction: row;
+}
+
   
   /* 
 	##Device = Tablets, Ipads (portrait)
