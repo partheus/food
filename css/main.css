@@ -1,184 +1,192 @@
 :root {
-	--color-dark: rgb(14, 24, 12);
-	--color-mid: #e6b771;
-	--color-light: rgb(251, 245, 233);
-	--color-red: rgb(220, 20, 60);
-	--color-pista: aquamarine;
-	--max-width: 500px;
-	--font-primary: 'Cardo', serif;
-	--font-secondary:  'Big Shoulders Text', cursive;
-	--font-text: 'Bitter', serif;
+  --color-dark: rgb(14, 24, 12);
+  --color-mid: #e6b771;
+  --color-light: rgb(251, 245, 233);
+  --color-red: rgb(220, 20, 60);
+  --color-pista: aquamarine;
+  --max-width: 500px;
+  --font-primary: "Cardo", serif;
+  --font-secondary: "Big Shoulders Text", cursive;
+  --font-text: "Bitter", serif;
 }
 
 .light--mode {
-	--color-dark: rgb(232, 250, 233);
-	--color-mid: #352610;
-	--color-light: rgb(12, 12, 11);
-	--color-red: rgb(104, 201, 231);
-	--color-pista: rgb(233, 69, 192);
+  --color-dark: rgb(232, 250, 233);
+  --color-mid: #352610;
+  --color-light: rgb(12, 12, 11);
+  --color-red: rgb(104, 201, 231);
+  --color-pista: rgb(233, 69, 192);
 }
 
-
 html {
-	margin:0;
-	padding:0;
-	overflow-x:hidden;
-  }
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 .pagetitle a {
-	font-family: var(--font-secondary);
-	text-transform: lowercase;
-	color: var(--color-red);
-	font-size: 3em;
-	border-bottom: 10px dashed salmon;
-	line-height: 1.5;
-	transition: all ease-in-out 0.3s;
+  font-family: var(--font-secondary);
+  text-transform: lowercase;
+  color: var(--color-red);
+  font-size: 3em;
+  border-bottom: 10px dashed salmon;
+  line-height: 1.5;
+  transition: all ease-in-out 0.3s;
 }
 
 .pagedescription {
-	font-size: 2.5em;
-	text-transform: capitalize;
-	font-family: var(--font-text);
-	font-weight: bold;
-	letter-spacing: 0.01em;
-	color: var(--color-mid);
-	width: fit-content;
-	margin: 1em auto;
+  font-size: 2.5em;
+  text-transform: capitalize;
+  font-family: var(--font-text);
+  font-weight: bold;
+  letter-spacing: 0.01em;
+  color: var(--color-mid);
+  width: fit-content;
+  margin: 1em auto;
 }
 
 body {
-    background: var(--color-dark);
-	padding: 1.0em; 
-	color: var( --color-light );
-	font-size: 16px;
-	font-style: normal;
-	text-align: center;
-	font-family: var(--font-primary);
+  background: var(--color-dark);
+  padding: 1em;
+  color: var(--color-light);
+  font-size: 16px;
+  font-style: normal;
+  text-align: center;
+  font-family: var(--font-primary);
 
-	@media screen and (min-width: 600px) {
-		padding: 5.0em;
-	}
+  @media screen and (min-width: 600px) {
+    padding: 5em;
+  }
 }
 
 a {
-	color: var(--color-pista);
-	text-decoration:none;
+  color: var(--color-pista);
+  text-decoration: none;
 }
 
-h1, h2, p {
-	margin: 0;
-	padding: 0;
-	text-align: center;
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 p {
-	font-size: 1.25em;
-	line-height: 1.45em;
+  font-size: 1.25em;
+  line-height: 1.45em;
 }
 
 .content {
-	max-width: 100ch;
-	margin: 0 auto;
+  max-width: 100ch;
+  margin: 0 auto;
 }
 
 .food-item {
-	margin: 12em auto;
-	font-family: var(--font-text);
-	display: flex;
-	flex-direction: column;
+  margin: 12em auto;
+  font-family: var(--font-text);
+  display: flex;
+  flex-direction: column;
+}
+
+.food-item__header a {
+  border: 4px dashed var(--color-mid);
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.1em 0.25em;
+  font-family: var(--font-secondary);
+  font-weight: 900;
+  font-size: 1.75em;
+  line-height: 1.75;
+  transition: all ease-in-out 0.2s;
 }
 
 
-.food-item__header a {
-	border: 4px dashed var(--color-mid);
-	width: fit-content;
-	margin: 0 auto;
-	padding: 0.1em 0.25em;
-	font-family: var(--font-secondary);
-	font-weight: 900;
-	font-size: 1.75em;
-	line-height: 1.75;
-	transition: all ease-in-out 0.2s;	
+.food-item__header a::after {
+	content: "🔗";
+	display: inline;
+	position: relative;
+	bottom: 10px;
+    left: 5px;	
+	font-size: 0.5em;
 }
 
 .food-item__about {
-	margin: 1em auto;
-	font-size: 1em;
+  margin: 1em auto;
+  font-size: 1em;
 }
 
 .food-item__cuisine {
-	font-family: var(--font-primary);
-	color: var(--color-red);
-	background: var(--color-light);
-	border-radius: 50px;
-	width: fit-content;
-	margin: 0 auto;
-	font-size: 1em;
-	padding: 0.75em 1.5em;
-	font-weight: 700;
+  font-family: var(--font-primary);
+  color: var(--color-red);
+  background: var(--color-light);
+  border-radius: 50px;
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 1em;
+  padding: 0.75em 1.5em;
+  font-weight: 700;
 }
 
-.circle
-  {
-	display: block;
-	position: relative;
-	opacity: 0.7;
-	box-shadow: inset;
-	z-index: -4;
-    border-radius: 50%;
-    width: 12em;
-    height: 12em; 
-	background: var(--color-red);
-	margin-left: 3em;
-	margin-bottom: -5em;
-  }
+.circle {
+  display: block;
+  position: relative;
+  opacity: 0.7;
+  box-shadow: inset;
+  z-index: -4;
+  border-radius: 50%;
+  width: 12em;
+  height: 12em;
+  background: var(--color-red);
+  margin-left: 3em;
+  margin-bottom: -5em;
+}
 
 .food-item__header a:hover {
-	border: 4px dashed palevioletred;
-	transition: all ease-in-out 0.2s;
-	color: var(--color-light);
-	cursor: alias;
+  border: 4px dashed palevioletred;
+  transition: all ease-in-out 0.2s;
+  color: var(--color-light);
+  cursor: alias;
 }
 
 .food-emoji {
-	margin: 1em auto;
-	padding: 0.75em;
-	background-color: var(--color-pista);
-	height: 32px;
-	width: 32px;
-	transition: all ease-in-out 0.2s;
-	border-radius: 10%;
+  margin: 1em auto;
+  padding: 0.75em;
+  background-color: var(--color-pista);
+  height: 32px;
+  width: 32px;
+  transition: all ease-in-out 0.2s;
+  border-radius: 10%;
 }
 
 .food-emoji:hover {
-    filter: hue-rotate(-85deg);
-	cursor: wait;
-	border-radius: 50%;
+  filter: hue-rotate(-85deg);
+  cursor: wait;
+  border-radius: 50%;
 }
 
 .svg-container {
-	display: none;
-	visibility: hidden;
+  display: none;
+  visibility: hidden;
 }
 
 .toggle {
-	display: flex;
-	margin: 0 auto;
-	background: none;
-	font-size: 1.5em;
-	position: absolute;
-	right: 0.25em;
-	top: 0.25em;
-	padding: 5px;
-	transition: all ease-in-out 0.2s;
-	border-radius: 50%;
-	border: 4px dashed var(--color-pista);
+  display: flex;
+  margin: 0 auto;
+  background: none;
+  font-size: 1.5em;
+  position: absolute;
+  right: 0.5em;
+  top: 0.5em;
+  padding: 5px;
+  transition: all ease-in-out 0.2s;
+  border-radius: 50%;
+  border: 4px dashed var(--color-pista);
 }
 
 .toggle:hover {
-	border: 4px dashed var(--color-red);
-	cursor: grabbing;
+  border: 4px dashed var(--color-red);
+  cursor: grabbing;
 }
-
 
 /* 
   ##Device = Desktops
@@ -186,110 +194,101 @@ p {
 */
 
 @media (min-width: 1281px) {
-  
-	/* CSS */
-	.svg-container {
-		display: block;
-		visibility: visible;
-	}
-	
+  /* CSS */
+  .svg-container {
+    display: block;
+    visibility: visible;
   }
-  
-  /* 
+}
+
+/* 
 	##Device = Laptops, Desktops
 	##Screen = B/w 1025px to 1280px
   */
-  
-  @media (min-width: 1025px) {
 
-	.food-item__about {
-		font-size: 1.5em;
-	}
-	.food-item__header {
-		font-size: 2.5em;
-	}
-	/* CSS */
+@media (min-width: 1025px) {
+  .food-item__about {
+    font-size: 1.5em;
+  }
+  .food-item__header {
+    font-size: 2.5em;
+  }
+  /* CSS */
 
-.toggle {
-	right: 0.75em;
-	top: 0.75em;
-	font-size: 2em;
-}
-	
-.food-item__cuisine {
-	font-size: 1.5em;
-}
+  .toggle {
+    right: 0.75em;
+    top: 0.75em;
+    font-size: 2em;
+  }
 
-	.food-emoji {
-		margin: 2em auto;
-	}
+  .food-item__cuisine {
+    font-size: 1.5em;
+  }
 
-	.pagetitle a {
-		font-size: 9em;
-	}
-	
+  .food-emoji {
+    margin: 2em auto;
+  }
+
+  .pagetitle a {
+    font-size: 9em;
+  }
 }
 
 .footer-link {
-	font-size: 1.25em;
-	color: var(--color-mid);
-	font-family: var(--font-text);
-	cursor: alias;
+  font-size: 1.25em;
+  color: var(--color-mid);
+  font-family: var(--font-text);
+  cursor: alias;
 }
 
 .footer-links {
-	justify-content: center;
-	column-gap: 1em;
-    align-items: center;
-	display: flex;
-	flex-direction: row;
+  justify-content: center;
+  row-gap: 1em;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
-  
-  /* 
+/* 
 	##Device = Tablets, Ipads (portrait)
 	##Screen = B/w 768px to 1024px
   */
-  
-  @media (min-width: 768px) {
-	.pagetitle a {
-		font-size: 6em;
 
-	}
-	/* CSS */
-	
+@media (min-width: 768px) {
+  .pagetitle a {
+    font-size: 6em;
   }
-  
-  /* 
+
+  .footer-links {
+	  flex-direction: row;
+	  column-gap: 1em;
+  }
+  /* CSS */
+}
+
+/* 
 	##Device = Tablets, Ipads (landscape)
 	##Screen = B/w 768px to 1024px
   */
-  
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-	
-	/* CSS */
-	
-  }
-  
-  /* 
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* CSS */
+}
+
+/* 
 	##Device = Low Resolution Tablets, Mobiles (Landscape)
 	##Screen = B/w 481px to 767px
   */
-  
-  @media (min-width: 481px) and (max-width: 767px) {
-	
-	/* CSS */
-	
-  }
-  
-  /* 
+
+@media (min-width: 481px) and (max-width: 767px) {
+  /* CSS */
+}
+
+/* 
 	##Device = Most of the Smartphones Mobiles (Portrait)
 	##Screen = B/w 320px to 479px
   */
-  
-  @media (min-width: 320px) and (max-width: 480px) {
-	
-	/* CSS */
-	
-  }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  /* CSS */
+}
