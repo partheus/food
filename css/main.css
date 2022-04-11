@@ -10,11 +10,20 @@
   --font-text: "Bitter", serif;
 }
 
+[theme="light"] {
+  --color-dark: rgb(232, 250, 233);
+  --color-mid: #352610;
+  --color-light: rgb(12, 12, 11);
+  --color-red: rgb(0, 195, 255);
+  --color-pista: rgb(233, 69, 192);
+}
+
+
 .light--mode {
   --color-dark: rgb(232, 250, 233);
   --color-mid: #352610;
   --color-light: rgb(12, 12, 11);
-  --color-red: rgb(104, 201, 231);
+  --color-red: rgb(0, 195, 255);
   --color-pista: rgb(233, 69, 192);
 }
 
@@ -34,7 +43,7 @@ html {
 }
 
 .pagedescription {
-  font-size: 2.5em;
+  font-size: 1.5em;
   text-transform: capitalize;
   font-family: var(--font-text);
   font-weight: bold;
@@ -42,6 +51,15 @@ html {
   color: var(--color-mid);
   width: fit-content;
   margin: 1em auto;
+}
+
+.hero {
+  display: grid;
+  min-height: 50vh;
+  place-content: center;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  text-align: center;
 }
 
 body {
@@ -134,10 +152,10 @@ p {
   box-shadow: inset;
   z-index: -4;
   border-radius: 50%;
-  width: 12em;
-  height: 12em;
+  width: 10em;
+  height: 10em;
   background: var(--color-red);
-  margin-left: 3em;
+  margin-left: 1em;
   margin-bottom: -5em;
 }
 
@@ -162,6 +180,31 @@ p {
   filter: hue-rotate(-85deg);
   cursor: wait;
   border-radius: 50%;
+}
+
+.food-hover {
+  padding: 0.75em;
+  background-color: var(--color-pista);
+  height: 32px;
+  width: 32px;
+  border-radius: 10%;
+  position: relative;
+}
+
+.svg-wave {
+  fill: var(--color-mid);
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.svg-o {
+  fill: var(--color-pista);
+  height: 3em;
+  width: 3em;
+  margin: 3em auto;
+  border: 5px dashed var(--color-red);
+  border-radius:  50%;
+  padding: 2em;
 }
 
 .svg-container {
@@ -214,6 +257,12 @@ p {
     font-size: 2.5em;
   }
   /* CSS */
+.pagedescription {
+    font-size: 2.5em;
+
+}
+
+
 
   .toggle {
     right: 0.75em;
@@ -239,6 +288,13 @@ p {
   color: var(--color-mid);
   font-family: var(--font-text);
   cursor: alias;
+  border-bottom: 2px solid transparent;
+  transition: all ease-in-out 0.3s;
+}
+
+.footer-link:hover {
+  color: var(--color-red);
+  border-bottom: 2px solid var(--color-pista);
 }
 
 .footer-links {
@@ -247,6 +303,13 @@ p {
   align-items: center;
   display: flex;
   flex-direction: column;
+}
+
+footer {
+  display: grid;
+  min-height: 20vh;
+  place-content: center;
+  text-align: center;
 }
 
 /* 
@@ -258,7 +321,11 @@ p {
   .pagetitle a {
     font-size: 6em;
   }
-
+  .circle {
+    margin-left: 13em;
+    width: 12em;
+  height: 12em;
+  }
   .footer-links {
 	  flex-direction: row;
 	  column-gap: 1em;
