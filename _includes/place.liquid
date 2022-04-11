@@ -1,7 +1,7 @@
 <div class="food-item">
     <span class="circle"></span>
     <h2 class="food-item__header">
-      <a href="{{ place.data.url }}">{{ place.data.title }}</a>
+      <a target="_blank" href="{{ place.data.url }}">{{ place.data.title }}</a>
     </h2>
     <div class="food-item__about">{{ place.templateContent | safe }}</div>  
     <div class="food-item__cuisine">🏷 {{ place.data.cuisine }}</div>
