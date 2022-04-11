@@ -1,17 +1,52 @@
 :root {
 	--color-dark: rgb(24, 12, 14);
-	--color-mid: #CDC9C3;
+	--color-mid: #e6b771;
 	--color-light: rgb(251, 245, 233);
+	--color-red: rgb(220, 20, 60);
+	--color-pista: aquamarine;
 	--max-width: 500px;
 	--font-primary: 'Cardo', serif;
 	--font-secondary:  'Big Shoulders Text', cursive;
+	--font-text: 'Bitter', serif;
+}
+
+.light--mode {
+	--color-dark: rgb(255, 215, 221);
+	--color-mid: #352610;
+	--color-light: rgb(12, 12, 11);
+	--color-red: rgb(104, 201, 231);
+	--color-pista: rgb(249, 59, 202);
+}
+
+
+html {
+	margin:0;
+	padding:0;
+	overflow-x:hidden;
+  }
+.pagetitle a {
+	font-family: var(--font-secondary);
+	text-transform: lowercase;
+	color: var(--color-red);
+	font-size: 3em;
+	border-bottom: 10px dashed salmon;
+	line-height: 1.5;
+	transition: all ease-in-out 0.3s;
+}
+
+.pagedescription {
+	font-size: 2em;
+	text-transform: uppercase;
+	font-family: var(--font-text);
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	color: var(--color-mid);
 }
 
 body {
     background: var(--color-dark);
-	padding: 0.5em; 
+	padding: 1.0em; 
 	color: var( --color-light );
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, serif;
 	font-size: 16px;
 	font-style: normal;
 	text-align: center;
@@ -23,7 +58,7 @@ body {
 }
 
 a {
-	color: aquamarine;
+	color: var(--color-pista);
 	text-decoration:none;
 }
 
@@ -43,26 +78,13 @@ p {
 	margin: 0 auto;
 }
 
-.content::after {
-	content: " ";
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	transform: translateZ(-1px) scale(1.5);
-	background-size: 100%;
-	z-index: -1;
-}
-
 .food-item {
 	margin: 12em auto;
-	font-size: 1em;
-	line-height: 1.25;
-	font-family: 'Bitter', serif;
+	font-family: var(--font-text);
 	display: flex;
 	flex-direction: column;
 }
+
 
 .food-item__header a {
 	border: 4px dashed var(--color-mid);
@@ -71,10 +93,14 @@ p {
 	padding: 0.1em 0.25em;
 	font-family: var(--font-secondary);
 	font-weight: 900;
-	font-size: 2.5em;
-	margin-bottom: 10px;
+	font-size: 1.75em;
 	line-height: 1.75;
-	transition: all ease-in-out 0.3s;	
+	transition: all ease-in-out 0.2s;	
+}
+
+.food-item__about {
+	margin-top: 1em;
+	font-size: 1em;
 }
 
 .circle
@@ -82,22 +108,140 @@ p {
 	display: block;
 	position: absolute;
 	opacity: 0.7;
+	box-shadow: inset;
 	z-index: -1;
     border-radius: 50%;
-    width: 10em;
-    height: 10em; 
-	background: crimson;
+    width: 12em;
+    height: 12em; 
+	background: var(--color-red);
 	margin-top: 75px;
   }
 
 .food-item__header a:hover {
 	border: 4px dashed palevioletred;
-	transition: all ease-in-out 0.3s;
-	color: lightpink;
-	background-color: rgb(59, 28, 14);
+	transition: all ease-in-out 0.2s;
+	color: var(--color-light);
 }
 
 .food-emoji {
-	font-size: 5em;
+	margin: 1em auto;
+	padding: 0.75em;
+	background-color: var(--color-pista);
+	height: 32px;
+	width: 32px;
+	transition: all ease-in-out 0.2s;
+	border-radius: 10%;
 }
+
+.food-emoji:hover {
+    filter: hue-rotate(-95deg);
+	cursor: wait;
+	border-radius: 50%;
+}
+
+.svg-container {
+	display: none;
+	visibility: hidden;
+}
+
+.toggle {
+	display: flex;
+	margin: 0 auto;
+	background: none;
+	border: none;
+	font-size: 2em;
+	position: absolute;
+	right: 2em;
+	padding: 5px;
+	transition: all ease-in-out 0.2s;
+	outline: 5px dashed var(--color-pista);
+	border: none !important;
+}
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+	/* CSS */
+	.svg-container {
+		display: block;
+		visibility: visible;
+	}
+	
+  }
+  
+  /* 
+	##Device = Laptops, Desktops
+	##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) {
+	.food-item__header {
+		font-size: 2.5em;
+	}
+	/* CSS */
+
+
+	
+
+	.food-emoji {
+		margin: 2em auto;
+	}
+
+	.pagetitle a {
+		font-size: 9em;
+	}
+	
+}
+  
+  /* 
+	##Device = Tablets, Ipads (portrait)
+	##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) {
+	.pagetitle a {
+		font-size: 6em;
+
+	}
+	/* CSS */
+	
+  }
+  
+  /* 
+	##Device = Tablets, Ipads (landscape)
+	##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	
+	/* CSS */
+	
+  }
+  
+  /* 
+	##Device = Low Resolution Tablets, Mobiles (Landscape)
+	##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+	
+	/* CSS */
+	
+  }
+  
+  /* 
+	##Device = Most of the Smartphones Mobiles (Portrait)
+	##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+	
+	/* CSS */
+	
+  }
 
