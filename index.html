@@ -13,7 +13,9 @@ description: Parth's favorite eats in the PDX metropolitan area
   <h2 class="food-item__header">
     <a href="{{ place.data.url }}">{{ place.data.title }}</a>
   </h2>
-  <p class="food-item__about">{{ place.templateContent | safe }}</p>
+  <div class="food-item__about">{{ place.templateContent | safe }}</div>
+  <div class="food-item__cuisine">{{ place.data.cuisine }}</div>
+
   <p class="food-emoji">{{ place.data.icon }}</p>
 </div>
 {%- endfor -%}
