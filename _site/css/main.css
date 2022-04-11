@@ -11,7 +11,7 @@
 }
 
 .light--mode {
-	--color-dark: rgb(255, 215, 221);
+	--color-dark: rgb(232, 250, 233);
 	--color-mid: #352610;
 	--color-light: rgb(12, 12, 11);
 	--color-red: rgb(104, 201, 231);
