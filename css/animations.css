@@ -1,41 +1,90 @@
-.text-pop-up-top {
-	-webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-} 
 
- @-webkit-keyframes text-pop-up-top {
-    0% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-      -webkit-transform-origin: 50% 50%;
-              transform-origin: 50% 50%;
-      text-shadow: none;
-    }
-    100% {
-      -webkit-transform: translateY(-50px);
-              transform: translateY(-50px);
-      -webkit-transform-origin: 50% 50%;
-              transform-origin: 50% 50%;
-      /* text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3); */
-    }
+ @-webkit-keyframes roll-in-blurred-left {
+  0% {
+    -webkit-transform: translateX(-1000px) rotate(-720deg);
+            transform: translateX(-1000px) rotate(-720deg);
+    -webkit-filter: blur(50px);
+            filter: blur(50px);
+    opacity: 0;
   }
-  @keyframes text-pop-up-top {
-    0% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-      -webkit-transform-origin: 50% 50%;
-              transform-origin: 50% 50%;
-      text-shadow: none;
-    }
-    100% {
-      -webkit-transform: translateY(-50px);
-              transform: translateY(-50px);
-      -webkit-transform-origin: 50% 50%;
-              transform-origin: 50% 50%;
-      /* text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3); */
-    }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+            transform: translateX(0) rotate(0deg);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
   }
-  
+}
+@keyframes roll-in-blurred-left {
+  0% {
+    -webkit-transform: translateX(-1000px) rotate(-720deg);
+            transform: translateX(-1000px) rotate(-720deg);
+    -webkit-filter: blur(50px);
+            filter: blur(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+            transform: translateX(0) rotate(0deg);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.roll-in-blurred-left {
+	-webkit-animation: roll-in-blurred-left 1.65s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+	        animation: roll-in-blurred-left 1.65s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+          animation-delay: 0.3s;
+}
+
+ @-webkit-keyframes slide-in-blurred-top {
+  0% {
+    -webkit-transform: translateY(-600px) scaleY(2.5) scaleX(0.2);
+            transform: translateY(-600px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+            transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-blurred-top {
+  0% {
+    -webkit-transform: translateY(-600px) scaleY(2.5) scaleX(0.2);
+            transform: translateY(-600px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+            transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+
+
+.slide-in-blurred-top {
+	-webkit-animation: slide-in-blurred-top 1.8s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+	        animation: slide-in-blurred-top 1.8s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+          animation-delay: 0.3s;
+}
 
   .svg{
 	stroke: deeppink;

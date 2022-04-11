@@ -14,7 +14,7 @@
   --color-dark: rgb(232, 250, 233);
   --color-mid: #352610;
   --color-light: rgb(12, 12, 11);
-  --color-red: rgb(104, 201, 231);
+  --color-red: rgb(0, 195, 255);
   --color-pista: rgb(233, 69, 192);
 }
 
@@ -34,7 +34,7 @@ html {
 }
 
 .pagedescription {
-  font-size: 2.5em;
+  font-size: 1.5em;
   text-transform: capitalize;
   font-family: var(--font-text);
   font-weight: bold;
@@ -42,6 +42,15 @@ html {
   color: var(--color-mid);
   width: fit-content;
   margin: 1em auto;
+}
+
+.hero {
+  display: grid;
+  min-height: 50vh;
+  place-content: center;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  text-align: center;
 }
 
 body {
@@ -164,6 +173,15 @@ p {
   border-radius: 50%;
 }
 
+.food-hover {
+  padding: 0.75em;
+  background-color: var(--color-pista);
+  height: 32px;
+  width: 32px;
+  border-radius: 10%;
+  position: relative;
+}
+
 .svg-container {
   display: none;
   visibility: hidden;
@@ -214,6 +232,11 @@ p {
     font-size: 2.5em;
   }
   /* CSS */
+.pagedescription {
+    font-size: 2.5em;
+
+}
+
 
   .toggle {
     right: 0.75em;
@@ -239,6 +262,13 @@ p {
   color: var(--color-mid);
   font-family: var(--font-text);
   cursor: alias;
+  border-bottom: 2px solid transparent;
+  transition: all ease-in-out 0.3s;
+}
+
+.footer-link:hover {
+  color: var(--color-red);
+  border-bottom: 2px solid var(--color-pista);
 }
 
 .footer-links {
