@@ -10,6 +10,15 @@
   --font-text: "Bitter", serif;
 }
 
+[theme="light"] {
+  --color-dark: rgb(232, 250, 233);
+  --color-mid: #352610;
+  --color-light: rgb(12, 12, 11);
+  --color-red: rgb(0, 195, 255);
+  --color-pista: rgb(233, 69, 192);
+}
+
+
 .light--mode {
   --color-dark: rgb(232, 250, 233);
   --color-mid: #352610;
