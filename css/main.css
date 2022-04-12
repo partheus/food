@@ -53,11 +53,34 @@ html {
   margin: 1em auto;
 }
 
+.colophon {
+  font-size: 1em;
+  margin: 0 auto 3em auto;
+  color: var(--color-light);
+  letter-spacing: 0.02em;
+  max-width: 60ch;
+}
+
+.colophon a::after {
+  color: var(--color-pista);
+  content: "🔗";
+}
+
+.colophon a:hover {
+  color: var(--color-red);
+}
+
+li, ul {
+  text-align: left;
+  line-height: 1.2;
+  margin: 1em auto;
+}
+
 .hero {
   display: grid;
   min-height: 50vh;
   place-content: center;
-  padding-top: 5vh;
+  padding-top: 15vh;
   padding-bottom: 5vh;
   text-align: center;
 }
@@ -69,7 +92,7 @@ body {
   font-size: 16px;
   font-style: normal;
   text-align: center;
-  font-family: var(--font-primary);
+  font-family: var(--font-text);
 
   @media screen and (min-width: 600px) {
     padding: 5em;
@@ -79,6 +102,11 @@ body {
 a {
   color: var(--color-pista);
   text-decoration: none;
+  transition: all ease-in-out 0.2s;
+}
+
+a:hover {
+  color: var(--color-red);
 }
 
 h1,
@@ -96,7 +124,7 @@ p {
 
 .content {
   max-width: 100ch;
-  margin: 0 auto;
+  margin: 1em auto;
 }
 
 .food-item {
@@ -193,7 +221,7 @@ p {
 
 .svg-wave {
   fill: var(--color-mid);
-  max-width: 100%;
+  max-width: 120ch;
   margin: 0 auto;
 }
 
@@ -201,7 +229,7 @@ p {
   fill: var(--color-pista);
   height: 3em;
   width: 3em;
-  margin: 3em auto;
+  margin: 1em auto;
   border: 5px dashed var(--color-red);
   border-radius:  50%;
   padding: 2em;
@@ -303,6 +331,7 @@ p {
   align-items: center;
   display: flex;
   flex-direction: column;
+  margin: 3em auto;
 }
 
 footer {
@@ -318,6 +347,9 @@ footer {
   */
 
 @media (min-width: 768px) {
+  .colophon {
+    font-size: 1.5em;
+  }
   .pagetitle a {
     font-size: 6em;
   }
