@@ -248,7 +248,7 @@ p {
 .go-to-top {
   border: 5px dashed var(--color-pista);
   fill: var(--color-dark);
-background-color: var(--color-mid);
+  background-color: var(--color-mid);
 }
 
 .svg-container {
