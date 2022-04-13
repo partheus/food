@@ -237,6 +237,12 @@ p {
   margin: 0 auto;
 }
 
+.error-svg {
+  fill: var(--color-red);
+  animation: roll-in-blurred-left;
+  max-width: 90%;
+}
+
 .svg-line {
   fill: var(--color-pista);
   height: 5em;
