@@ -134,6 +134,10 @@ p {
   flex-direction: column;
 }
 
+.food-item__header {
+  text-transform: capitalize;
+}
+
 .food-item__header a {
   border: 4px dashed var(--color-mid);
   width: fit-content;
@@ -257,6 +261,8 @@ p {
   letter-spacing: 0.03em;
   color: var(--color-pista);
   text-decoration: overline;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .navbar {
