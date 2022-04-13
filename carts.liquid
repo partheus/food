@@ -1,0 +1,10 @@
+---
+layout: layout.liquid
+pageTitle: Carts
+templateEngineOverride: md, njk
+description: Carts and such
+---
+Haha!
+{%- for cart in collections.carts -%}
+{% include cart %}
+{%- endfor -%}

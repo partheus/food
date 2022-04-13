@@ -3,6 +3,11 @@ module.exports = function (eleventyConfig) {
     return collection.getFilteredByGlob("places/*.md");
   });
 
+  eleventyConfig.addCollection("carts", function (collection) {
+    return collection.getFilteredByGlob("carts/*.md");
+  });
+
+
   eleventyConfig.addPassthroughCopy("./css");
   eleventyConfig.addPassthroughCopy("./img");
 
