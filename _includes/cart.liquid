@@ -1,9 +1,9 @@
 <div class="food-item">
-    <span class="circle roll-in-blurred-left"></span>
-    <h2 class="food-item__header">
-      <a target="_blank" href="{{ cart.data.url }}">{{ cart.data.title }}</a>
-    </h2>
-    <div class="food-item__about">{{ cart.templateContent | safe }}</div>  
-    <div class="food-item__cuisine">🏷 {{ cart.data.cuisine }}</div>
-    <p class="food-emoji">{{ cart.data.icon }}</p>
-  </div>
+  <span class="shape cart roll-in-blurred-left"></span>
+  <h2 class="food-item__header">
+    <a target="_blank" href="{{ cart.data.url }}">{{ cart.data.title }}</a>
+  </h2>
+  <div class="food-item__about">{{ cart.templateContent | safe }}</div>
+  <div class="food-item__cuisine">🏷 {{ cart.data.cuisine }}</div>
+  <p class="food-emoji">{{ cart.data.icon }}</p>
+</div>

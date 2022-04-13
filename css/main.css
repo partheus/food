@@ -18,7 +18,6 @@
   --color-pista: rgb(233, 69, 192);
 }
 
-
 .light--mode {
   --color-dark: rgb(232, 250, 233);
   --color-mid: #352610;
@@ -70,7 +69,8 @@ html {
   color: var(--color-red);
 }
 
-li, ul {
+li,
+ul {
   text-align: left;
   line-height: 1.2;
   margin: 1em auto;
@@ -150,14 +150,13 @@ p {
   transition: all ease-in-out 0.2s;
 }
 
-
 .food-item__header a::after {
-	content: "🔗";
-	display: inline;
-	position: relative;
-	bottom: 10px;
-    left: 5px;	
-	font-size: 0.5em;
+  content: "🔗";
+  display: inline;
+  position: relative;
+  bottom: 10px;
+  left: 5px;
+  font-size: 0.5em;
 }
 
 .food-item__about {
@@ -177,18 +176,25 @@ p {
   font-weight: 700;
 }
 
-.circle {
+.shape {
   display: block;
   position: relative;
   opacity: 0.7;
   box-shadow: inset;
   z-index: -4;
-  border-radius: 50%;
   width: 10em;
   height: 10em;
   background: var(--color-red);
   margin-left: 1em;
   margin-bottom: -5em;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.cart {
+  border-radius: 20%;
 }
 
 .food-item__header a:hover {
@@ -235,7 +241,7 @@ p {
   width: 3em;
   margin: 1em auto;
   border: 5px dashed var(--color-red);
-  border-radius:  50%;
+  border-radius: 50%;
   padding: 2em;
 }
 
@@ -318,14 +324,13 @@ p {
     font-size: 2.5em;
   }
   /* CSS */
-.pagedescription {
+  .pagedescription {
     font-size: 2.5em;
+  }
 
-}
-
-.path {
-  font-size: 2em;
-}
+  .path {
+    font-size: 2em;
+  }
 
   .food-item__cuisine {
     font-size: 1.5em;
@@ -387,11 +392,11 @@ footer {
   .circle {
     margin-left: 13em;
     width: 12em;
-  height: 12em;
+    height: 12em;
   }
   .footer-links {
-	  flex-direction: row;
-	  column-gap: 1em;
+    flex-direction: row;
+    column-gap: 1em;
   }
 
   /* CSS */
