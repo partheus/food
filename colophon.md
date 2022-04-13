@@ -1,6 +1,6 @@
 ---
 layout: layout.liquid
-pageTitle: clphn
+pageTitle: Clphn
 templateEngineOverride: md, njk
 description: col⋅o⋅phon | noun. An inscription, usually at the end of a book, giving facts about its publication.
 ---
