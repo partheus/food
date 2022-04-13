@@ -75,6 +75,7 @@ ul {
   text-align: left;
   line-height: 1.2;
   margin: 1em auto;
+  padding-left: 0.5em;
 }
 
 .hero {
