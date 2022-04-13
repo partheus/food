@@ -289,10 +289,9 @@ p {
 }
 
 .path {
-  font-family: var(--font-secondary);
+  font-family: var(--font-primary);
   font-size: 1.5em;
   font-weight: 900;
-  letter-spacing: 0.03em;
   color: var(--color-pista);
   text-decoration: overline;
   display: flex;
