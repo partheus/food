@@ -421,7 +421,7 @@ footer {
   .pagetitle a {
     font-size: 6em;
   }
-  .circle {
+  .circle, .cart {
     margin-left: 13em;
     width: 12em;
     height: 12em;
