@@ -135,3 +135,17 @@
     </div> -->
   </body>
 </html>
+
+
+<script>
+  let isLight = true;
+  const toggle = document.querySelector("#toggle");
+
+  function myFunction() {
+    isLight = !isLight;
+    isLight ? (toggle.innerText = "🌞") : (toggle.innerText = "🌚");
+    var element = document.body;
+    element.classList.toggle("light--mode");
+    console.log(hehe);
+  }
+</script>
