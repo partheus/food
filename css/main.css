@@ -237,6 +237,11 @@ p {
   margin: 0 auto;
 }
 
+.svg-line {
+  fill: var(--color-pista);
+  height: 5em;
+}
+
 .svg-o {
   fill: var(--color-pista);
   border: 5px dashed var(--color-red);
@@ -382,10 +387,10 @@ p {
 }
 
 .footer-link {
-  font-size: 1.25em;
-  letter-spacing: 0.01em;
+  font-size: 1.5em;
+  letter-spacing: 0em;
   color: var(--color-mid);
-  font-family: var(--font-primary);
+  font-family: monospace;
   cursor: alias;
   font-weight: bold;
   border-bottom: 2px solid transparent;
