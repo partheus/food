@@ -2,8 +2,8 @@
 layout: layout.liquid
 pageTitle: clphn
 templateEngineOverride: md, njk
+description: col⋅o⋅phon | noun. An inscription, usually at the end of a book, giving facts about its publication.
 ---
-> <div class="irevamp-text"><p style="font-weight: bold;">col⋅o⋅phon</p><i> n. </i>An inscription, usually at the end of a book, giving facts about its publication.</div>
 
 <div class="colophon">
 <h4 class=""><a href="https://github.com/partheus/food/" target="_blank">
