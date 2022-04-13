@@ -3,6 +3,7 @@
   --color-mid: #e6b771;
   --color-light: rgb(251, 245, 233);
   --color-red: rgb(220, 20, 60);
+  --color-highlight: #750550;
   --color-pista: aquamarine;
   --max-width: 150ch;
   --font-primary: "Cardo", serif;
@@ -16,6 +17,7 @@
   --color-light: rgb(12, 12, 11);
   --color-red: rgb(0, 195, 255);
   --color-pista: rgb(233, 69, 192);
+  --color-highlight: #1E5128;
 }
 
 .light--mode {
@@ -186,7 +188,7 @@ p {
   z-index: -4;
   width: 10em;
   height: 10em;
-  background: var(--color-red);
+  background: var(--color-highlight);
   margin-left: 1em;
   margin-bottom: -5em;
 }
