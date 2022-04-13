@@ -255,6 +255,8 @@ p {
 .go-to-top {
   height: 2em;
   width: 2em;
+  margin-top: 5em;
+  margin-bottom: 5em;
   margin-right: -5em;
   margin-left: auto;
   border-radius: 50%;
