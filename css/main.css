@@ -4,7 +4,7 @@
   --color-light: rgb(251, 245, 233);
   --color-red: rgb(220, 20, 60);
   --color-pista: aquamarine;
-  --max-width: 500px;
+  --max-width: 150ch;
   --font-primary: "Cardo", serif;
   --font-secondary: "Big Shoulders Text", cursive;
   --font-text: "Bitter", serif;
@@ -47,10 +47,10 @@ html {
   text-transform: capitalize;
   font-family: var(--font-text);
   font-weight: bold;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.03em;
   color: var(--color-mid);
   width: fit-content;
-  margin: 1em auto;
+  margin: 1em auto 0.25em auto;
 }
 
 .colophon {
@@ -221,7 +221,7 @@ p {
 
 .svg-wave {
   fill: var(--color-mid);
-  max-width: 120ch;
+  max-width: 100ch;
   margin: 0 auto;
 }
 
@@ -242,16 +242,43 @@ p {
 
 .toggle {
   display: flex;
-  margin: 0 auto;
   background: none;
   font-size: 1.5em;
-  position: absolute;
-  right: 0.5em;
-  top: 0.5em;
   padding: 5px;
   transition: all ease-in-out 0.2s;
   border-radius: 50%;
   border: 4px dashed var(--color-pista);
+}
+
+.path {
+  font-family: var(--font-secondary);
+  font-size: 1.5em;
+  font-weight: 900;
+  letter-spacing: 0.03em;
+  color: var(--color-pista);
+  text-decoration: overline;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 150ch;
+  margin: 0 auto;
+  padding: 2rem 0;
+  flex-direction: row;
+  align-items: center;
+}
+
+.path a {
+  color: var(--color-mid);
+  transition: all ease-in-out 0.2s;
+}
+
+.path a:hover {
+  color: var(--color-red);
 }
 
 .toggle:hover {
@@ -290,13 +317,9 @@ p {
 
 }
 
-
-
-  .toggle {
-    right: 0.75em;
-    top: 0.75em;
-    font-size: 2em;
-  }
+.path {
+  font-size: 2em;
+}
 
   .food-item__cuisine {
     font-size: 1.5em;
@@ -313,9 +336,11 @@ p {
 
 .footer-link {
   font-size: 1.25em;
+  letter-spacing: 0.02em;
   color: var(--color-mid);
   font-family: var(--font-text);
   cursor: alias;
+  font-weight: bold;
   border-bottom: 2px solid transparent;
   transition: all ease-in-out 0.3s;
 }
@@ -362,6 +387,7 @@ footer {
 	  flex-direction: row;
 	  column-gap: 1em;
   }
+
   /* CSS */
 }
 
