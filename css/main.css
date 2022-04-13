@@ -257,6 +257,8 @@ p {
   letter-spacing: 0.03em;
   color: var(--color-pista);
   text-decoration: overline;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .navbar {
