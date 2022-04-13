@@ -14,5 +14,5 @@ $ view this repo on github</a></h4>
 - Primary typeface is [Big Shoulders Text](https://xotype.co/big-shoulders/) by Patrick King
 - Secondary typeface is [Bitter HT](https://www.huertatipografica.com/en/fonts/bitter-ht) by Huerta Tipográfica
 - Tertiary typeface is [Cardo](https://fonts.google.com/specimen/Cardo) by David Perry
-- Designed by Parth Shiralkar, sketched out in [Lunacy](https://icons8.com/lunacy)
+- Designed and developed by [Parth Shiralkar](https://parth.ninja)
 </div>
