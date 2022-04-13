@@ -10,6 +10,7 @@ a:focus,input:focus {
   a:focus:not(:focus-visible),
   input:focus:not(:focus-visible) {
     outline: 0;
+    border: none;
   } 
   
   /* Show focus styles on keyboard focus. */
