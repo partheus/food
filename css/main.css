@@ -22,7 +22,7 @@
   --color-dark: rgb(232, 250, 233);
   --color-mid: #352610;
   --color-light: rgb(12, 12, 11);
-  --color-red: rgb(0, 195, 255);
+  --color-red: rgb(0, 151, 197);
   --color-pista: rgb(233, 69, 192);
 }
 
@@ -32,14 +32,16 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-.pagetitle a {
+
+.pagetitle {
   font-family: var(--font-secondary);
   text-transform: lowercase;
   color: var(--color-red);
-  font-size: 3em;
+  font-size: 7em;
   border-bottom: 10px dashed salmon;
-  line-height: 1.5;
   transition: all ease-in-out 0.3s;
+  width: fit-content;
+  margin: auto;
 }
 
 .pagedescription {
@@ -170,11 +172,11 @@ p {
   font-family: var(--font-primary);
   color: var(--color-red);
   background: var(--color-light);
-  border-radius: 50px;
+  /* border-radius: 50px; */
   width: fit-content;
   margin: 0 auto;
   font-size: 1em;
-  padding: 0.75em 1.5em;
+  padding: 0.5em 1em;
   font-weight: 700;
 }
 
@@ -203,23 +205,17 @@ p {
   border: 4px dashed palevioletred;
   transition: all ease-in-out 0.2s;
   color: var(--color-light);
-  cursor: alias;
+  cursor: pointer;
 }
 
 .food-emoji {
   margin: 1em auto;
-  padding: 0.75em;
+  padding: 0.5em;
   background-color: var(--color-pista);
-  height: 32px;
-  width: 32px;
-  transition: all ease-in-out 0.2s;
-  border-radius: 10%;
-}
-
-.food-emoji:hover {
-  filter: hue-rotate(-85deg);
-  cursor: wait;
+  height: 22px;
+  width: 22px;
   border-radius: 50%;
+  filter: hue-rotate(-85deg);
 }
 
 .food-hover {
@@ -304,8 +300,8 @@ p {
   font-size: 1.5em;
   padding: 5px;
   transition: all ease-in-out 0.2s;
-  border-radius: 50%;
-  border: 4px dashed var(--color-pista);
+  border-radius: 1px;
+  border: 3px dashed var(--color-pista);
 }
 
 .path {
@@ -313,7 +309,6 @@ p {
   font-size: 1.5em;
   font-weight: 900;
   color: var(--color-pista);
-  text-decoration: overline;
   display: flex;
   flex-direction: row-reverse;
 }
@@ -341,7 +336,7 @@ p {
 }
 
 .toggle:hover {
-  border: 4px dashed var(--color-red);
+  border: 3px dashed var(--color-red);
   cursor: grabbing;
 }
 
@@ -383,10 +378,6 @@ p {
     font-size: 1.5em;
   }
 
-  .food-emoji {
-    margin: 2em auto;
-  }
-
   .pagetitle a {
     font-size: 9em;
   }
@@ -397,7 +388,7 @@ p {
   letter-spacing: 0em;
   color: var(--color-mid);
   font-family: monospace;
-  cursor: alias;
+  cursor: pointer;
   font-weight: bold;
   border-bottom: 2px solid transparent;
   transition: all ease-in-out 0.3s;

@@ -9,15 +9,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <title>{{ pageTitle }}</title>
+    <meta name="generator" content="eleventy"/>
+    <title>{{ pageTitle | safe }}</title>
+    <meta
+      name="description"
+      content="{{ description | safe }}"
+  />
   </head>
 {% include nav %}
 
   <body>
     <div class="hero">
       <h1 class="pagetitle">
-        <a href={{ pageURL }}>{{ pageTitle }}</a>
+        {{ pageTitle | safe }}
       </h1>
-      <h4 class="pagedescription">{{ description }}</h4>
+      <h2 class="h4 pagedescription">{{ description | safe }}</h2>
       <div class="svg-waves-container">
         <svg
           class="svg-wave text-focus-in"
@@ -50,6 +56,5 @@
     isLight ? (toggle.innerText = "🌞") : (toggle.innerText = "🌚");
     var element = document.body;
     element.classList.toggle("light--mode");
-    console.log(hehe);
   }
 </script>
