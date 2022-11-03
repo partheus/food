@@ -10,20 +10,12 @@
   --font-text: "Bitter", serif;
 }
 
-[theme="light"] {
-  --color-dark: rgb(232, 250, 233);
-  --color-mid: #352610;
-  --color-light: rgb(12, 12, 11);
-  --color-red: rgb(0, 195, 255);
-  --color-pista: rgb(233, 69, 192);
-}
-
 .light--mode {
   --color-dark: rgb(232, 250, 233);
-  --color-mid: #352610;
+  --color-mid: #810000;
   --color-light: rgb(12, 12, 11);
-  --color-red: rgb(0, 151, 197);
-  --color-pista: rgb(233, 69, 192);
+  --color-red: rgb(0, 195, 254);
+  --color-pista: rgb(130, 38, 107);
 }
 
 html {
@@ -297,7 +289,7 @@ p {
 .toggle {
   display: flex;
   background: none;
-  font-size: 1.5em;
+  font-size: 2.5em;
   padding: 5px;
   transition: all ease-in-out 0.2s;
   border-radius: 1px;
@@ -338,6 +330,7 @@ p {
 .toggle:hover {
   border: 3px dashed var(--color-red);
   cursor: grabbing;
+  transition: all ease-in-out 0.3s;
 }
 
 /* 
