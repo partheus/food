@@ -17,8 +17,8 @@
   />
   </head>
 <div class="navbar">
-  <button onclick="myFunction()" id="toggle" class="toggle">🌞</button>
-  <div class="path"><a href="/" title="Home">home/</a>/colophon/</div>
+  <button onclick="myThemeToggle()" id="toggle" class="toggle">🌞</button>
+  <div class="path"><a href="/" title="Home">home</a>/colophon/</div>
 </div>
 
   <body>
@@ -130,7 +130,7 @@ $ view this repo on github</a></h4>
   let isLight = true;
   const toggle = document.querySelector("#toggle");
 
-  function myFunction() {
+  function myThemeToggle() {
     isLight = !isLight;
     isLight ? (toggle.innerText = "🌞") : (toggle.innerText = "🌚");
     var element = document.body;
